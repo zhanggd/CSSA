@@ -70,6 +70,13 @@ $table_prefix  = 'wp_';
  */
 define('WP_DEBUG', false);
 
+// added 04/01/2015 by Guangda
+define('WP_ALLOW_MULTISITE', true);
+
+// added 05/01/2015 by Guangda
+// set this to a large number like 12000 when fatal error happens
+set_time_limit(30);
+
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */

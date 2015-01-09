@@ -582,18 +582,28 @@ class AR2_PostViews_Section {
 		exit;
 		
 	}
-	
-	
+		
 	/**
 	 * Converts dashes to camelCase for Javascript-friendly variable naming.
 	 * @since 2.0
 	 */
+	 /* In PHP 5.0 /e is deprecated, using preg_replace_callback instead 06/01/2015 --by Guangda*/
 	public function js_friendly_id() {
 		
 		return preg_replace( "/\-(.)/e", "strtoupper('\\1')", $this->id );
 		
 	}
-	
+	/*
+	public function js_friendly_id() {
+		
+		return preg_replace_callback('/\-(.)/',
+									function ($matches) {
+										return strtolower($matches[0]);
+									},
+									$this->id
+									);
+	}
+	*/
 	/**
 	 * Handles all Javascript for Customize preview.
 	 * @since 2.0
