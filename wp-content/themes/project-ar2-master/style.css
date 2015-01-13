@@ -452,7 +452,7 @@ a.more-link:hover, .navigation a:hover, .comment-controls a:hover, a.post-edit-l
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 10px;
-	background: #FFF;
+	background: #FFFFFF;
 }
 #branding {
 	max-height: 120px;
@@ -463,12 +463,15 @@ a.more-link:hover, .navigation a:hover, .comment-controls a:hover, a.post-edit-l
 	font-weight: 700;
 	text-transform: uppercase;
 }
+
+/*settings of the title*/
 .blog-name {
 	margin: 0 0 0.2em;
 	line-height: 1em;
 	display: block;
-	font-size: 190%;
+	font-size: 220%;
 }
+
 .blog-name a:link, .blog-name a:visited {
 	color: #111;
 	text-decoration: none;
@@ -638,28 +641,40 @@ nav ul.menu li a:only-child:after {
 }
 
 /* Main Menu */
+/* setting of the background of the menu (the whole menu block), color is changed to dark red. by Guangda Jan 09, 2015*/
+#main-back {
+	margin: 0 0;
+	max-width: 100%;
+	background: #CE1E1E;
+	border-top: .2em solid #FFF000;
+}
+
 #main-nav {
 	margin: 0 auto;
-	max-width: 980px;
-	background: #FFF;
+	max-width: 960px;
+	background: #CE1E1E;
+	border-top: .2em solid #FFF000;
 }
+/*settings of the main menu, color is changed to deep red here. by Guangda Jan 09, 2015*/
 #main-nav ul.menu {
-	margin: 0 10px;
-	background: #F5F5F5;
-	border: 1px solid #DEDEDE;
+	margin: 0 0;
+	background: #CE1E1E;
+	/*border: 1px solid #CE1E1E;*/
+	border-top: .1em solid #FFF000;
 	/*box-shadow: 0 0 10px 2px #EEE;*/
 }
 #main-nav ul.menu li {
 	margin: 0;
-	border-right: 1px solid #DEDEDE;
+	border-right: 1px solid #CE1E1E;
 }
+/*settings of the font in the main menu. by Guangda Jan 09, 2015*/
 #main-nav ul.menu li a:link, #main-nav ul.menu li a:visited {
 	padding: .8em 1.2em;
 	font-size: 100%;
-	font-weight: 700;
+	font-weight: 800;
 	text-transform: uppercase;
-	color: #949494;
-	border-bottom: .3em solid #EFEFEF;	
+	color: #FFFFFF;
+	border-bottom: .3em solid #CE1E1E;
 }
 #main-nav ul.menu li.current-menu-item a {
 	color: #333;
@@ -671,8 +686,9 @@ nav ul.menu li a:only-child:after {
 	padding: .7em 1em;
 	font-size: 100%;
 }
+/*change the color of the current menu */
 #main-nav ul.menu li:hover, #main-nav ul.menu li a:hover {
-	border-bottom-color: #86C140;
+	border-bottom-color: #EFFF00;
 	color: #333;
 }
 #main-nav ul.menu li:hover > ul.sub-menu {

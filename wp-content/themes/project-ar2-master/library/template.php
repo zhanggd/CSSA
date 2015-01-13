@@ -159,6 +159,7 @@ function ar2_footer_nav_fallback_cb() {
 	echo '</ul>';
 }
 
+/*<!--remove post social here which doesn't work. Jan 13, 2015-->
 function ar2_load_social_js() {
 
 	if ( ar2_get_theme_option( 'post_display[post_social]' ) )
@@ -166,7 +167,7 @@ function ar2_load_social_js() {
 	
 }
 add_action( 'wp_head', 'ar2_load_social_js' );
-
+*/
 function ar2_post_navigation() {
 
 	if ( function_exists( 'wp_pagenavi' ) ) : wp_pagenavi(); else : ?>

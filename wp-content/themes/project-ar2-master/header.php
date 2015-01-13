@@ -74,6 +74,7 @@ if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comm
 </header><!-- #header -->
 
 <?php ar2_above_nav() ?>
+<div class = "main-back">
 <nav id="main-nav" role="navigation">
 	<?php 
 	wp_nav_menu( array( 
@@ -85,6 +86,7 @@ if ( is_singular() && get_option( 'thread_comments' ) ) wp_enqueue_script( 'comm
 	) );
 	?>
 </nav><!-- #nav -->
+</div>
 <?php ar2_below_nav() ?>
 
 <?php ar2_above_main() ?>

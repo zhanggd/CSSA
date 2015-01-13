@@ -49,21 +49,7 @@
 		<?php if ( ar2_get_theme_option( 'post_display[single_thumbs]' ) && has_post_thumbnail( $post->ID ) ) : ?>
 			<div class="entry-photo"><?php echo ar2_get_thumbnail( 'single-thumb' ) ?></div>
 		<?php endif ?>
-		
-		<?php if ( ar2_get_theme_option( 'post_display[post_social]' ) ) : ?>
-		<div class="entry-social">
-				<div class="addthis_toolbox addthis_default_style" 
-					addthis:url="<?php echo esc_attr( get_permalink( $post->ID ) ) ?>"
-					addthis:title="<?php echo esc_attr( get_the_title() ) ?>"
-					addthis:description="<?php the_excerpt_rss( 30, 2 ) ?>">
-					<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-					<a class="addthis_button_tweet"></a>
-					<a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
-					<a class="addthis_counter addthis_pill_style"></a>
-				</div>
-		</div>
-		<?php endif ?>
-			
+		<!--remove post social here which doesn't work. Jan 13, 2015-->
 	</header><!-- .entry-header -->
     
     <div class="entry-content clearfix">
